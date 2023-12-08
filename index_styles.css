@@ -101,10 +101,6 @@ body {
   .image_desktop {
     display: none;
   }
-  /*figcaption {
-    color: #f2f2f2;
-    padding: 0.5rem;
-  }*/
   .button {
     display: inline-block;
     background-color: #59331D;
@@ -140,7 +136,7 @@ body {
     margin: 0 1rem 3rem 1rem;
   }
   /*for tablet*/
-  @media screen and (min-width: 834px) {
+  @media screen and (min-width: 600px) {
     body {
         max-width: 100%;
         margin: 0;
@@ -155,7 +151,6 @@ body {
       }
       /* navbar styling */
       nav ul {
-        width: 371px;
         margin-bottom: 1rem;
         list-style-type: none;
         display: flex;
@@ -165,15 +160,12 @@ body {
       nav li {
         margin: auto;
         font-size: 1.3rem;
-        display:flex;
-        flex-direction: space-between;
       }
       nav a {
         margin-bottom: .75rem;
         color: white;
         text-decoration: none;
         display: block;
-        justify-content: center;
     }
 
     /* max width on the image in pixels */
@@ -209,7 +201,7 @@ body {
       }
     }
     /*for desktop*/
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 900px) {
         body {
             max-width: 100%;
             margin: 0;
@@ -217,10 +209,7 @@ body {
             font-family: 'Lato', sans-serif;
             line-height: 2;
           }
-        header nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+        header {
             margin-right:15px;
           }
           .logo {
@@ -229,19 +218,22 @@ body {
             justify-content: flex-start;
           }
           /* navbar styling */
+          nav {
+            display: flex;
+            flex-direction: row;
+          }
           nav ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: flex-end;
           }
           nav li {
             font-size: 1.3rem;
+            width: 120px;
           }
           nav a {
             color: white;
             text-decoration: none;
-            display: flex;
-            flex-direction: row;
         }
     
         /* max width on the image in pixels */
